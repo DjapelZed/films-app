@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <h1 class="header-logo__title">Мій список фільмів</h1>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="watched">
+                    <div class="watched__container">
+                        <h2 class="watched__title title">Переглянуто</h2>
+                        <div class="watched__block">
+                            <div class="watched__sort">
+                                <div class="watched-sort__title">сортувати</div>
+                                <div class="watched-sort__items">
+                                    <ul class="watched-sort__list">
+                                        <li class="watched-sort__item active no-select" id="sortAbc">АБВ</li>
+                                        <li class="watched-sort__item no-select" id="sortRating">Оцінка</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="watched__list">
+                                <!-- The container for a films list. Don't rename this class -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="addfilm">
+                    <div class="addfilm__container">
+                        <h2 class="addfilm__title title">Добавити фільм</h2>
+                        <div class="addfilm__block">
+                            <form action="" class="addfilm__form" name="addFilm">
+                                <div class="film__info">
+                                    <label for="filmTitle" class="input__title">Назва</label>
+                                    <input type="text" name="filmTitle" id="filmTitle" class="film__input" required>
+                                    <label for="filmAuthor" class="input__title">Режисер</label>
+                                    <input type="text" name="filmAuthor" id="filmAuthor" class="film__input">
+                                </div>
+                                <label for="" class="input__title">Оцінка</label>
+                                <div class="film__rates">
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="1" id="rate_1" class="film__input">
+                                        <label for="rate_1">1</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="2" id="rate_2" class="film__input">
+                                        <label for="rate_2">2</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="3" id="rate_3" class="film__input">
+                                        <label for="rate_3">3</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="4" id="rate_4" class="film__input">
+                                        <label for="rate_4">4</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="5" id="rate_5" class="film__input">
+                                        <label for="rate_5">5</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="6" id="rate_6" class="film__input">
+                                        <label for="rate_6">6</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="7" id="rate_7" class="film__input">
+                                        <label for="rate_7">7</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="8" id="rate_8" class="film__input">
+                                        <label for="rate_8">8</label>
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="9" id="rate_9" class="film__input">
+                                        <label for="rate_9">9</label>    
+                                    </div>
+                                    <div class="rate">
+                                        <input name="filmRating" type="radio" value="10" id="rate_10" class="film__input">
+                                        <label name="filmRating" for="rate_10">10</label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="button watched__button">Переглянуто</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
